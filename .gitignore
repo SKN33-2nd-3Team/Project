@@ -1,0 +1,30 @@
+# 비밀값
+.env
+.env.*
+!.env.example
+
+# 가상환경·캐시
+.venv/
+venv/
+__pycache__/
+.pytest_cache/
+.ipynb_checkpoints/
+
+# 데이터 (원본·중간·가공 모두 커밋 금지, .gitkeep만 유지)
+data/raw/*
+data/interim/*
+data/processed/*
+!data/**/.gitkeep
+
+# 모델 파일
+models/*.joblib
+models/*.pkl
+models/*.pt
+models/*.pth
+
+# 산출물 (스크립트 재실행으로 재생성 가능 — PR에는 이미지로 첨부)
+reports/
+
+# 로그·개인 설정
+*.log
+CLAUDE.md
